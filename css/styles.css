@@ -35,9 +35,9 @@ button {
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -141,7 +141,7 @@ input {
 .header-adress:focus {
   color: #404bbf;
 }
-/* Hero */
+/*----------------- Hero ----------------*/
 .hero-section {
   background-color: #2e2f42;
   margin: 0 auto;
@@ -154,18 +154,23 @@ input {
     url(../images/hero-background-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  width: 320px;
   background-size: cover;
 }
 
 .main-title {
   color: var(--WHITE, #fff);
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  /* line-height: 1.07; */
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
+  /* max-width: 496px; */
+  max-width: 216px;
   margin-bottom: 48px;
+  margin: 0 auto;
 }
 
 .section-container {
@@ -204,6 +209,7 @@ input {
 /* Our Strenghts */
 .strength-section {
   padding: 120px 0;
+  flex-wrap: wrap;
 }
 
 .visually-hidden {
@@ -228,6 +234,7 @@ input {
   justify-content: center;
   margin-bottom: 8px;
   height: 112px;
+  display: none;
 }
 
 .strengths-icon {
@@ -257,7 +264,7 @@ input {
 }
 
 .strenghts-list-item {
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 /* Section #3 */
@@ -846,4 +853,36 @@ input {
 .modal-button:hover,
 .modal-button:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .hero-section {
+    width: 768px;
+  }
+
+  .main-title {
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.11;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-section {
+    max-width: 1440px;
+  }
+
+  .main-title {
+    max-width: 496px;
+  }
 }
