@@ -919,8 +919,8 @@ input {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .header-adress:hover,
-  .header-adress:focus {
+  .header-adress-link:hover,
+  .header-adress-link:focus {
     color: #404bbf;
   }
 
