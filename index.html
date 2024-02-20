@@ -62,6 +62,77 @@
           </svg>
         </button>
       </div>
+      <!------ Mob Menu ---- -->
+      <div class="mob-menu">
+        <div>
+          <button class="mob-menu-close-btn" type="button">
+            <svg class="modal-close-icon" height="8" width="8">
+              <use href="./images/icons.svg#icon-close-icon"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-nav-list">
+              <li>
+                <a class="mob-nav-links" href="./index.html" target="_blank"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="mob-nav-links" href="" target="_blank">Portfolio</a>
+              </li>
+              <li>
+                <a class="mob-nav-links" href="" target="_blank">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-adress">
+            <ul class="mob-adress-list">
+              <li>
+                <a class="mob-adress-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mob-adress-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-list">
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link">
+                <svg class="mob-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link">
+                <svg class="mob-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link">
+                <svg class="mob-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link">
+                <svg class="mob-icon-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Hero -->
@@ -133,13 +204,33 @@
           <h2 class="our-team-main-header">Our Team</h2>
           <ul class="our-team-list">
             <li class="our-team-item">
-              <img
-                class="team-img"
-                src="./images/img_mark.jpg"
-                alt="mark-profile-photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/img_mark.jpg 1x, ./images/img_mark-x2.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img_mark-tab.jpg    1x,
+                    ./images/img_mark-tab-x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img_mark-mob.jpg    1x,
+                    ./images/img_mark-mob-x2.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/img_mark.jpg"
+                  alt="mark-profile-photo"
+                  width="264"
+                  height="260"
+                />
+              </picture>
 
               <div class="employee-div">
                 <h3 class="our-team-header">Mark Guerrero</h3>
@@ -179,13 +270,34 @@
               </div>
             </li>
             <li class="our-team-item">
-              <img
-                class="team-img"
-                src="./images/img_tom.jpg"
-                alt="tom-profile-photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/img_tom.jpg 1x, ./images/img_tom-x2.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img_tom-tab.jpg    1x,
+                    ./images/img_tom-tab-x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img_tom-mob.jpg    1x,
+                    ./images/img_tom-mob-x2.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/img_tom.jpg"
+                  alt="tom-profile-photo"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="employee-div">
                 <h3 class="our-team-header">Tom Ford</h3>
                 <p class="our-team-text">Frontend Developer</p>
@@ -224,13 +336,37 @@
               </div>
             </li>
             <li class="our-team-item">
-              <img
-                class="team-img"
-                src="./images/img_camila.jpg"
-                alt="camila-profile-photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/img_camila.jpg    1x,
+                    ./images/img_camila-x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img_camila-tab.jpg    1x,
+                    ./images/img_camila-tab-x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img_camila-mob.jpg    1x,
+                    ./images/img_camila-mob-x2.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/img_camila.jpg"
+                  alt="camila-profile-photo"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="employee-div">
                 <h3 class="our-team-header">Camila Garcia</h3>
                 <p class="our-team-text">Marketing</p>
@@ -269,13 +405,37 @@
               </div>
             </li>
             <li class="our-team-item">
-              <img
-                class="team-img"
-                src="./images/img_daniel.jpg"
-                alt="daniel-profile-photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/img_daniel.jpg    1x,
+                    ./images/img_daniel-x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img_daniel-tab.jpg    1x,
+                    ./images/img_daniel-tab-x2.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img_daniel-mob.jpg    1x,
+                    ./images/img_daniel-mob-x2.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/img_daniel.jpg"
+                  alt="daniel-profile-photo"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="employee-div">
                 <h3 class="our-team-header">Daniel Wilson</h3>
                 <p class="our-team-text">UI Designer</p>
@@ -323,13 +483,36 @@
           <ul class="our-portfolio-list">
             <li class="our-portfolio-item">
               <div class="portfolio-cover-wraper">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/img-banking-app.jpg"
-                  alt="img-cashless-payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/img-banking-app.jpg,
+                      ./images/img-banking-app-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/img-banking-app-tab.jpg,
+                      ./images/img-banking-app-tab-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/img-banking-app-mob.jpg,
+                      ./images/img-banking-app-mob-x2.jpg
+                    "
+                  />
+                  <img
+                    class="our-portfolio-img"
+                    src="./images/img-banking-app.jpg"
+                    alt="img-cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -345,13 +528,36 @@
             </li>
             <li class="our-portfolio-item">
               <div class="portfolio-cover-wraper">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/img-cashless-payment.jpg"
-                  alt="img-cashless-payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/img-cashless-payment.jpg,
+                      ./images/img-cashless-payment-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/img-cashless-payment-tab.jpg,
+                      ./images/img-cashless-payment-tab-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/img-cashless-payment-mob.jpg,
+                      ./images/img-cashless-payment-mob-x2.jpg
+                    "
+                  />
+                  <img
+                    class="our-portfolio-img"
+                    src="./images/img-cashless-payment.jpg"
+                    alt="img-cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -366,13 +572,36 @@
             </li>
             <li class="our-portfolio-item">
               <div class="portfolio-cover-wraper">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/img-meditation-app.jpg"
-                  alt="img-meditation-app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/img-meditation-app.jpg,
+                      ./images/img-meditation-app-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/img-meditation-app-tab.jpg,
+                      ./images/img-meditation-app-tab-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/img-meditation-app-mob.jpg,
+                      ./images/img-meditation-app-mob-x2.jpg
+                    "
+                  />
+                  <img
+                    class="our-portfolio-img"
+                    src="./images/img-meditation-app.jpg"
+                    alt="img-cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -387,13 +616,36 @@
             </li>
             <li class="our-portfolio-item">
               <div class="portfolio-cover-wraper">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/img-taxi-service.jpg"
-                  alt="img-taxi-service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/img-taxi-service.jpg,
+                      ./images/img-taxi-service-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/img-taxi-service-tab.jpg,
+                      ./images/img-taxi-service-tab-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/img-taxi-service-mob.jpg,
+                      ./images/img-taxi-service-mob-x2.jpg
+                    "
+                  />
+                  <img
+                    class="our-portfolio-img"
+                    src="./images/img-taxi-service.jpg"
+                    alt="img-cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -408,13 +660,36 @@
             </li>
             <li class="our-portfolio-item">
               <div class="portfolio-cover-wraper">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/img-screen-illustration.jpg"
-                  alt="img-screen-illustration"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/img-screen-illustration.jpg,
+                      ./images/img-screen-illustration-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/img-screen-illustration-tab.jpg,
+                      ./images/img-screen-illustration-tab-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/img-screen-illustration-mob.jpg,
+                      ./images/img-screen-illustration-mob-x2.jpg
+                    "
+                  />
+                  <img
+                    class="our-portfolio-img"
+                    src="./images/img-screen-illustration.jpg"
+                    alt="img-cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -429,13 +704,36 @@
             </li>
             <li class="our-portfolio-item">
               <div class="portfolio-cover-wraper">
-                <img
-                  class="our-portfolio-img"
-                  src="./images/img-online-courses.jpg"
-                  alt="img-online-courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/img-online-courses.jpg,
+                      ./images/img-online-courses-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/img-online-courses-tab.jpg,
+                      ./images/img-online-courses-tab-x2.jpg
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/img-online-courses-mob.jpg,
+                      ./images/img-online-courses-mob-x2.jpg
+                    "
+                  />
+                  <img
+                    class="our-portfolio-img"
+                    src="./images/img-online-courses.jpg"
+                    alt="img-cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
