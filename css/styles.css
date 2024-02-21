@@ -160,6 +160,10 @@ input {
   text-transform: capitalize;
 }
 
+.current-mob {
+  color: #404bbf;
+}
+
 .mob-nav-links:focus,
 .mob-nav-links:active {
   color: var(--OCEAN, #404bbf);
