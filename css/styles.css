@@ -27,6 +27,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 button {
@@ -154,7 +156,7 @@ input {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0, 02em;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
@@ -376,6 +378,7 @@ input {
 
 .our-team-item {
   /* width: calc((100% - 3 * 24px) / 4); */
+  width: 264px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
@@ -477,6 +480,9 @@ input {
   /* width: calc((100% - 48px) / 3); */
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .our-portfolio-item:hover {
@@ -539,7 +545,6 @@ input {
 .footer {
   background-color: #2e2f42;
   /* flex-basis: 1440px; */
-  max-width: 320px;
   /* height: 312px; */
   padding: 96px 0;
   display: flex;
@@ -551,7 +556,7 @@ input {
   flex-direction: column;
   /* align-items: baseline; */
   justify-content: center;
-  gap: 72px;
+  gap: 72px 24px;
 }
 
 .logo-text {
@@ -635,6 +640,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 .subscribe-text {
@@ -654,7 +660,7 @@ input {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   height: 40px;
   background: var(--NAVY-BLUE, #2e2f42);
-  width: 264px;
+  width: 288px;
   background-color: transparent;
   font-size: 12px;
   line-height: 2;
@@ -1068,9 +1074,6 @@ input {
     justify-content: center;
   }
 
-  .our-team-item {
-    max-width: calc((100% - 24px) / 2);
-  }
   .team-img {
     width: 100%;
   }
@@ -1089,7 +1092,6 @@ input {
   /* -------- Footer -------------- */
 
   .footer {
-    max-width: 768px;
   }
 
   .footer-container {
@@ -1097,6 +1099,8 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: flex-start;
+    padding: 0 108px;
   }
   .footer-logo {
     margin-left: 0;
@@ -1115,6 +1119,10 @@ input {
     text-align: left;
   }
 
+  .subscribe-input {
+    width: 264px;
+  }
+
   .modal {
     width: 408px;
   }
@@ -1123,8 +1131,8 @@ input {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   /* --------Header--------------- */
@@ -1145,7 +1153,7 @@ input {
 
   /* ---------Hero---------------- */
   .hero-section {
-    width: 1158px;
+    width: 1440px;
     padding: 188px 0 188px;
   }
 
@@ -1210,10 +1218,10 @@ input {
 
   .our-portfolio-item {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
   }
   /* ------- Footer ----------- */
   .footer {
-    max-width: 1158px;
     justify-content: center;
     margin: 0 auto;
     padding: 100px 0;
