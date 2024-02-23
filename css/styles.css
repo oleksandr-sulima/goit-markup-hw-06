@@ -242,22 +242,22 @@ input {
 }
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        .hero-section {background-image: url(../images/hero-background-img-mob-x2.jpg);}}
+        .hero-section {background-image: linear-gradient( to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-background-img-mob-x2.jpg);}}
 
 @media screen and (min-width: 768px) {
-        .hero-section {background-image: url(../images/hero-background-img-tab.jpg);}
+        .hero-section {background-image: linear-gradient( to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-background-img-tab.jpg);}
     }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px) {
-        .hero-section {background-image: url(../images/hero-background-img-tab-x2.jpg);}
+        .hero-section {background-image: linear-gradient( to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-background-img-tab-x2.jpg);}
     }
 
 @media screen and (min-width: 1158px) {
-        .hero-section {background-image: url(../images/hero-background-img.jpg);}
+        .hero-section {background-image: linear-gradient( to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-background-img.jpg);}
     }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), (min-resolution: 192dpi) and (min-width: 1158px) {
-        .hero-section {background-image: url(../images/hero-background-img-x2.jpg)};
+        .hero-section {background-image: linear-gradient( to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-background-img-x2.jpg)};
     }
 
 .main-title {
@@ -503,14 +503,11 @@ input {
   /* width: calc((100% - 48px) / 3); */
   position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .our-portfolio-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .our-portfolio-img {
@@ -570,7 +567,6 @@ input {
   /* flex-basis: 1440px; */
   /* height: 312px; */
   padding: 96px 0;
-  display: flex;
   justify-content: center;
 }
 
@@ -600,7 +596,8 @@ input {
   display: flex;
   margin-bottom: 16px;
   /* margin-right: 0; */
-  margin: 0 auto;
+  padding: 0;
+  margin: 0 auto 16px;
 }
 
 .logo-studio-part-footer {
@@ -1128,7 +1125,7 @@ input {
     padding: 0 108px;
   }
   .footer-logo {
-    margin-left: 0;
+    margin: 0 0 16px;
   }
 
   .soc-media-title {
@@ -1256,6 +1253,7 @@ input {
 .footer-container {
   gap: 0;
 }
+
 
 .logo-text {
   margin-right: 120px;
